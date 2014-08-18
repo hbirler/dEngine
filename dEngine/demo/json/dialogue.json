@@ -1,0 +1,93 @@
+{
+    "prestate" : {
+        "varHP" : "150",
+        "armor":"1",
+        "exp":"0",
+        "gold":"0",
+        "imageFormat":".png",
+        "title":"Başlık",
+        "include":["start.json"]
+    },
+    
+    "shop": {
+        "t": "Zırh var abla gel. Paran *gold.",
+        "img": "*state",
+        "op": [
+            {
+                "t": "zırh al. yari can kaybet. 50 gold",
+                "p": "*state",
+                "e": ["armor = 2","gold - 50"],
+                "c": ["armor = 1","gold >= 50"]
+            },
+            {
+                "t": "ağır pro zırh al. 300 exp ve 100 gold",
+                "p": "*state",
+                "e": ["armor = 4","gold - 100"],
+                "c": ["armor = 2","exp >= 300","gold >= 100"],
+                "h": ["armor = 2"],
+                "_comment": ["c tutmazsa disabled, h tutmazsa direk gösterme"]
+            },
+            {
+                "t": "geri don",
+                "p": "*varPre"
+            }
+        ]
+    },
+    "combat": {
+        "t": "Combat var",
+        "op": [
+            {
+                "t": "geri don",
+                "p": "*varPre",
+                "e": ["varHit = 40",
+                      "varDamage = *varHit",
+                      "varDamage / *armor",
+                      "varHP - *varDamage",
+                      "exp + 100",
+                      "gold + 100"
+                     ]
+            }
+        ]
+    },
+    "adamsin": {
+        "t": "Adamsin dostum. Partiye var misin?",
+        "op": [
+            {
+                "t": "evet",
+                "pX": {
+                    "iptis":0.7,
+                    "gitburadan":0.3
+                }
+            },
+            {
+                "t": "no men",
+                "p": "gitburadan"
+            },
+            {
+                "t": "combata git",
+                "p": "combat",
+                "e": {"varPre": "= *state"},
+                "c": {"varHP":"> 0"}
+            }
+        ]
+    },
+    "gitburadan": {
+        "t": "Git buradan."
+    },
+    "iptis": {
+        "t": "Yee iptis iptis",
+        "op": [
+            {
+                "t": "Ben han, parti sahane",
+                "p": "start",
+                "h": {
+                    "varHan":"= 1"
+                },
+                "_comment": "virgulle daha fazla kosul verilebilir. ['varHan','varTop'] gibi. Bir de adin var'la baslamasina gerek yok",
+                "e": {
+                    "varHan": "= 0"
+                }
+            }
+        ]
+    }
+}

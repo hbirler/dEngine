@@ -1,0 +1,150 @@
+.primaryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    width: 100%;
+}
+
+#box {
+    float: left;
+    height: 200px;
+    margin-left: 24.399269%;
+    margin-top: 30px;
+    clear: none;
+    width: 51.20002%;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.458824) 0px 0px 15px 0px;
+    background-color: rgba(87,30,30,1);
+}
+
+#text {
+    float: left;
+    font-size: 1.5em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    min-height: 0px;
+    text-transform: capitalize;
+    margin-right: 0%;
+    color: rgb(255, 255, 255);
+}
+
+button {
+    outline:none;
+    float: left;
+    height: 40px;
+    font-size: 1em;
+    margin-left: 24.399269%;
+    margin-top: 15px;
+    clear: both;
+    width: 51.20002%;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.498039) 0px 0px 3px 0px inset, rgba(255, 255, 255, 0.298039) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.4) 0px 3px 15px 0px, rgb(151, 16, 16) 0px 6px 0px 0px;
+    box-shadow: rgba(255, 255, 255, 0.498039) 0px 0px 3px 0px inset, rgba(255, 255, 255, 0.298039) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.4) 0px 3px 15px 0px, rgb(151, 16, 16) 0px 6px 0px 0px;
+    background-image:-webkit-linear-gradient(270deg, rgb(185, 29, 29) 0%, rgb(129, 0, 0) 97%);
+    background-image: linear-gradient(180deg, rgb(185, 29, 29) 0%, rgb(129, 0, 0) 97%);
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-color: rgb(229, 233, 232);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-color: rgb(43, 0, 0);
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+    
+}
+
+button:hover {
+    background-image:-webkit-linear-gradient(270deg, rgb(223, 49, 49) 1%, rgb(172, 27, 27) 97%);
+    background-image: linear-gradient(180deg, rgb(223, 49, 49) 1%, rgb(172, 27, 27) 97%);
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-color: rgb(229, 233, 232);
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+}
+
+button:active {
+    background-image:-webkit-linear-gradient(270deg, rgb(129, 0, 0) 0%, rgb(185, 29, 29) 100%);
+    background-image: linear-gradient(180deg, rgb(129, 0, 0) 0%, rgb(185, 29, 29) 100%);
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-color: rgb(229, 233, 232);
+    -webkit-box-shadow: rgba(255, 255, 255, 0.498039) 0px 0px 3px 0px inset, rgba(255, 255, 255, 0.298039) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.4) 0px 3px 15px 0px, rgb(151, 16, 16) 0px 2px 0px 0px;
+    box-shadow: rgba(255, 255, 255, 0.498039) 0px 0px 3px 0px inset, rgba(255, 255, 255, 0.298039) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.4) 0px 3px 15px 0px, rgb(151, 16, 16) 0px 2px 0px 0px;
+    margin-top: 19px;
+    margin-bottom: -4px;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+}
+
+button:disabled {
+    float: left;
+    height: 40px;
+    font-size: 1em;
+    margin-left: 24.30489%;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    clear: both;
+    width: 51.20002%;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.498039) 0px 0px 3px 0px inset, rgba(255, 255, 255, 0.298039) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.4) 0px 3px 15px 0px, rgb(101, 101, 101) 0px 6px 0px 0px;
+    box-shadow: rgba(255, 255, 255, 0.498039) 0px 0px 3px 0px inset, rgba(255, 255, 255, 0.298039) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.4) 0px 3px 15px 0px, rgb(101, 101, 101) 0px 6px 0px 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-color: rgb(53, 53, 53);
+    display: block;
+    background-image:-webkit-linear-gradient(270deg, rgb(185, 185, 185) 0%, rgb(131, 131, 131) 94%);
+    background-image: linear-gradient(180deg, rgb(185, 185, 185) 0%, rgb(131, 131, 131) 94%);
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-color: rgb(229, 233, 232);
+    margin-right: 0%;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+}
+
+#box1 {
+    float: left;
+    height: auto;
+    margin-left: 24.399269%;
+    margin-top: 20px;
+    clear: both;
+    width: 51.20002%;
+    background-color: rgb(87, 30, 30);
+    -webkit-box-shadow: rgba(0, 0, 0, 0.458824) 0px 0px 15px 0px;
+    box-shadow: rgba(0, 0, 0, 0.458824) 0px 0px 15px 0px;
+    padding: 5px;
+    min-height: 75px;
+}
+
+#image {
+    float: none;
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-top: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    margin-right: auto;
+    min-height: 0px;
+    box-shadow: rgba(0, 0, 0, 0.458824) 0px 0px 15px 0px;
+}
+

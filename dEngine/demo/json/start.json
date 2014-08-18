@@ -1,0 +1,46 @@
+{
+    "start": {
+        "t": "Merhaba dostum adin ne senin?",
+        "img": "*state",
+        "op": [
+            {
+                "t": "HP: *varHP | Gold: *gold | EXP: *exp",
+                "p": "",
+                "disabled":"1"
+            },
+            {
+                "t": "han",
+                "p": "adamsin",
+                "e": {
+                    "varHan": "= 1",
+                    "varDeneme": "+ 5"
+                },
+                "_comment": "Komutlardan sonra bir bosluk zorunlu.Commentler silinebilir. Not almak icin de kullanabilirsin istedigin yerde. Degisken isimlerinde bosluk olmasin."
+            },
+            {
+                "t": "taş",
+                "p": "adamsin"
+            },
+            {
+                "t": "sana ne",
+                "p": "gitburadan"
+            },
+            {
+                "t": "shop (Paran *gold)",
+                "p": "shop",
+                "e": {"varPre": "= *state"}
+            },
+            {
+                "t": "combata git",
+                "p": "combat",
+                "e": {"varPre": "= *state"},
+                "c": {"varHP":"> 0"}
+            },
+            {
+                "t": "test",
+                "p": "start",
+                "cX": "return this.varHP == 150 || this.gold == 100;"
+            }
+        ]
+    }
+}
