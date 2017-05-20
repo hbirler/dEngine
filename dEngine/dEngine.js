@@ -53,7 +53,7 @@ var dEngine = {
         }
     },
     parse: function(data) {
-        dEngine.dialogues = JSON.parse(data);
+        dEngine.dialogues = data;
 
         if (dEngine.developer)
         {
@@ -69,7 +69,7 @@ var dEngine = {
         }
     },
     addparse: function(data) {
-        jQuery.extend(dEngine.dialogues,JSON.parse(data));
+        jQuery.extend(dEngine.dialogues,data);
         
         if (dEngine.developer)
         {
